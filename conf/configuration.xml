@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Logger>
+        <Level>INFO</Level>
+    </Logger>
+
+    <Database>
+        <SogoKids>
+            <JdbcUrl><![CDATA[jdbc:mysql://120.55.102.12:3306/sogo?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull]]></JdbcUrl>
+            <Username>sogo</Username>
+            <Password>sogo</Password>
+        </SogoKids>
+    </Database>
+
+    <Validation>
+        <Key>578890d82212ae548d883bc7a201cdf4</Key>
+        <AdminKey>578890d82212ae548d883bc7a201cdf4</AdminKey>
+    </Validation>
+
+    <SecretKey>
+        <Password>2e4b48fda0439a1f8da863829353bde7</Password>
+        <UToken>578890d82212ae548d883bc7a201cdf4</UToken>
+    </SecretKey>
+
+    <Image>
+        <Domain>http://s.momia.cn</Domain>
+    </Image>
+
+    <Sms>
+        <Enabled>yimei</Enabled>
+        <CorePoolSize>5</CorePoolSize>
+        <MaxPoolSize>20</MaxPoolSize>
+        <QueueSize>1000</QueueSize>
+        <Luosimao>
+            <Key></Key>
+            <Service>http://sms-api.luosimao.com/v1/send.json</Service>
+        </Luosimao>
+        <Yimei>
+            <CDKey><![CDATA[8SDK-EMY-6699-RDQUO]]></CDKey>
+            <Password>643797</Password>
+            <Service>http://hprpt2.eucp.b2m.cn:8080/sdkproxy/sendsms.action</Service>
+        </Yimei>
+    </Sms>
+
+</Configuration>

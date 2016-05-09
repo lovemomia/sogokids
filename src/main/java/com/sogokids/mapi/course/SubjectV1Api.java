@@ -9,7 +9,6 @@ import com.sogokids.mapi.AbstractApi;
 import com.sogokids.service.course.Course;
 import com.sogokids.service.course.CourseService;
 import com.sogokids.service.course.Subject;
-import com.sogokids.service.course.SubjectOrder;
 import com.sogokids.service.course.SubjectService;
 import com.sogokids.service.payment.OrderService;
 import com.sogokids.service.payment.Price;

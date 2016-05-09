@@ -76,9 +76,11 @@
 
     <bean id="teacherService" class="com.sogokids.service.teacher.TeacherService" parent="abstractService" />
 
-    <bean id="subjectService" class="com.sogokids.service.course.SubjectService" parent="abstractService" />
-    <bean id="courseService" class="com.sogokids.service.course.CourseService" parent="abstractService" />
-
     <bean id="priceService" class="com.sogokids.service.payment.PriceService" parent="abstractService" />
     <bean id="orderService" class="com.sogokids.service.payment.OrderService" parent="abstractService" />
+
+    <bean id="subjectService" class="com.sogokids.service.course.SubjectService" parent="abstractService">
+        <property name="orderService" ref="orderService" />
+    </bean>
+    <bean id="courseService" class="com.sogokids.service.course.CourseService" parent="abstractService" />
 </beans>

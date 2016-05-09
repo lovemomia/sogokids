@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,7 +83,7 @@ public class SubjectV1Api extends AbstractApi {
     }
 
     @RequestMapping(value = "/placeorder", method = RequestMethod.POST)
-    public SubjectOrder placeOrder(@RequestParam String utoken, @RequestParam String order) {
+    public JSON placeOrder(@RequestParam String utoken, @RequestParam String order) {
         if (StringUtils.isBlank(utoken)) throw new SogoLoginException();
         if (StringUtils.isBlank(order)) throw new SogoErrorException("订单信息不能为空");
 
@@ -92,13 +93,19 @@ public class SubjectV1Api extends AbstractApi {
                 StringUtils.isBlank(contactJson.getString("name")) ||
                 StringUtils.isBlank(contactJson.getString("mobile"))) throw new SogoErrorException("联系人信息缺失");
 
+        int count = 0;
+        BigDecimal totalFee = new BigDecimal(0);
         List<Price> prices = new ArrayList<Price>();
         JSONArray pricesJson = orderJson.getJSONArray("prices");
         if (pricesJson == null || pricesJson.isEmpty()) throw new SogoErrorException("订单数据为空");
         for (int i = 0; i < pricesJson.size(); i++) {
             JSONObject priceJson = pricesJson.getJSONObject(i);
             Price price = JSON.toJavaObject(priceJson, Price.class);
-            if (price.getCount() > 0) prices.add(price);
+            if (price.getCount() > 0) {
+                count += price.getCount();
+                totalFee = totalFee.add(price.getPrice().multiply(new BigDecimal(price.getCount())));
+                prices.add(price);
+            }
         }
         if (prices.isEmpty()) throw new SogoErrorException("订单数据为空");
 
@@ -107,6 +114,11 @@ public class SubjectV1Api extends AbstractApi {
         long orderId = subjectService.placeOrder(user.getId(), Type.SUBJECT_PACKAGE, contactJson.getString("name"), contactJson.getString("mobile"), prices);
         if (orderId <= 0) throw new SogoErrorException("下单失败");
 
-        return subjectService.getSubjectOrder(orderId);
+        JSONObject result = new JSONObject();
+        result.put("id", orderId);
+        result.put("count", count);
+        result.put("totalFee", totalFee);
+
+        return result;
     }
 }

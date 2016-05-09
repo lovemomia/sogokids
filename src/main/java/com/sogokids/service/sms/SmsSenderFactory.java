@@ -1,6 +1,6 @@
 package com.sogokids.service.sms;
 
-import com.sogokids.exception.SogoErrorException;
+import com.sogokids.common.exception.SogoErrorException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

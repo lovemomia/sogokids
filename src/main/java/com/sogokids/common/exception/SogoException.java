@@ -1,4 +1,4 @@
-package com.sogokids.exception;
+package com.sogokids.common.exception;
 
 public abstract class SogoException extends RuntimeException {
     public SogoException() {}

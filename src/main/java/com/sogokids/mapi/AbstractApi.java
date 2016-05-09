@@ -1,14 +1,14 @@
 package com.sogokids.mapi;
 
 import cn.momia.image.api.ImageFile;
-import com.sogokids.ctrl.BaseController;
+import com.sogokids.web.ctrl.BaseController;
 import com.sogokids.service.course.Course;
 import com.sogokids.service.course.Subject;
 import com.sogokids.service.course.UserBooked;
 import com.sogokids.service.course.UserPackage;
 import com.sogokids.service.teacher.Teacher;
 import com.sogokids.service.user.User;
-import com.sogokids.util.MiscUtil;
+import com.sogokids.common.util.MiscUtil;
 
 import java.util.ArrayList;
 import java.util.List;

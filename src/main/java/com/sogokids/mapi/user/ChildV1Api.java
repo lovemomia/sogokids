@@ -1,14 +1,14 @@
 package com.sogokids.mapi.user;
 
 import com.alibaba.fastjson.JSON;
-import com.sogokids.exception.SogoErrorException;
-import com.sogokids.exception.SogoLoginException;
+import com.sogokids.common.exception.SogoErrorException;
+import com.sogokids.common.exception.SogoLoginException;
 import com.sogokids.mapi.AbstractApi;
 import com.sogokids.service.user.Child;
 import com.sogokids.service.user.ChildService;
 import com.sogokids.service.user.User;
 import com.sogokids.service.user.UserService;
-import com.sogokids.util.CastUtil;
+import com.sogokids.common.util.CastUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

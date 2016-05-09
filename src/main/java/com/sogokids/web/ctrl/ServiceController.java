@@ -1,4 +1,4 @@
-package com.sogokids.ctrl;
+package com.sogokids.web.ctrl;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

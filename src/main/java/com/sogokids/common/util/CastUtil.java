@@ -1,4 +1,4 @@
-package com.sogokids.util;
+package com.sogokids.common.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;

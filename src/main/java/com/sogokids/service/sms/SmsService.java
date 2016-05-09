@@ -1,8 +1,8 @@
 package com.sogokids.service.sms;
 
 import com.google.common.collect.Sets;
-import com.sogokids.config.Configuration;
-import com.sogokids.exception.SogoErrorException;
+import com.sogokids.common.config.Configuration;
+import com.sogokids.common.exception.SogoErrorException;
 import com.sogokids.service.AbstractService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

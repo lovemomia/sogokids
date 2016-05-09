@@ -1,6 +1,6 @@
-package com.sogokids.ctrl;
+package com.sogokids.web.ctrl;
 
-import com.sogokids.response.Response;
+import com.sogokids.web.resp.Response;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -1,4 +1,4 @@
-package com.sogokids.util;
+package com.sogokids.common.util;
 
 import org.apache.commons.lang3.StringUtils;
 

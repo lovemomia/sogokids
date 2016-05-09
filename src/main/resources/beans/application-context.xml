@@ -8,15 +8,15 @@
         <property name="fileName" value="conf/configuration.xml" />
     </bean>
 
-    <bean id="conf" class="com.sogokids.config.Configuration">
+    <bean id="conf" class="com.sogokids.common.config.Configuration">
         <property name="xmlConf" ref="xmlConf" />
     </bean>
 
-    <bean class="com.sogokids.config.XmlPropertyPlaceholderConfigurer">
+    <bean class="com.sogokids.common.config.XmlPropertyPlaceholderConfigurer">
         <property name="xmlConf" ref="xmlConf" />
     </bean>
 
-    <bean class="com.sogokids.config.LoggerConfigurer" init-method="init">
+    <bean class="com.sogokids.common.config.LoggerConfigurer" init-method="init">
         <property name="xmlConf" ref="xmlConf" />
     </bean>
 
@@ -80,4 +80,5 @@
     <bean id="courseService" class="com.sogokids.service.course.CourseService" parent="abstractService" />
 
     <bean id="priceService" class="com.sogokids.service.payment.PriceService" parent="abstractService" />
+    <bean id="orderService" class="com.sogokids.service.payment.OrderService" parent="abstractService" />
 </beans>

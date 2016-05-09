@@ -1,11 +1,11 @@
 package com.sogokids.mapi.user;
 
-import com.sogokids.exception.SogoErrorException;
+import com.sogokids.common.exception.SogoErrorException;
 import com.sogokids.mapi.AbstractApi;
 import com.sogokids.service.sms.SmsService;
 import com.sogokids.service.user.User;
 import com.sogokids.service.user.UserService;
-import com.sogokids.util.MiscUtil;
+import com.sogokids.common.util.MiscUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -2,7 +2,7 @@ package com.sogokids.mapi.course;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.sogokids.exception.SogoErrorException;
+import com.sogokids.common.exception.SogoErrorException;
 import com.sogokids.mapi.AbstractApi;
 import com.sogokids.service.course.Course;
 import com.sogokids.service.course.CourseService;

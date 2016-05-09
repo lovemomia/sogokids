@@ -3,10 +3,6 @@ package com.sogokids.service.payment;
 import java.math.BigDecimal;
 
 public class Price {
-    public static class Type {
-        public static final int SUBJECT_PACKAGE = 1;
-    }
-
     private int id;
     private int refType;
     private int refId;

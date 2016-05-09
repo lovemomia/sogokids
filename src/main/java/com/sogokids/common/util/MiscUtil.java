@@ -1,4 +1,4 @@
-package com.sogokids.util;
+package com.sogokids.common.util;
 
 import com.google.common.base.Splitter;
 import com.google.common.collect.Sets;

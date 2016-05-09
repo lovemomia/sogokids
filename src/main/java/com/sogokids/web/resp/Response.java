@@ -1,4 +1,4 @@
-package com.sogokids.response;
+package com.sogokids.web.resp;
 
 import java.util.Date;
 

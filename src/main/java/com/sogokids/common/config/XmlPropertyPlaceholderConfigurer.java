@@ -1,4 +1,4 @@
-package com.sogokids.config;
+package com.sogokids.common.config;
 
 import org.apache.commons.configuration.XMLConfiguration;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;

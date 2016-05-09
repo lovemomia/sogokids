@@ -1,7 +1,7 @@
 package com.sogokids.service.course;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import com.sogokids.util.TimeUtil;
+import com.sogokids.common.util.TimeUtil;
 
 import java.util.Date;
 

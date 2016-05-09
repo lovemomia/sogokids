@@ -1,6 +1,6 @@
 package com.sogokids.web.filter;
 
-import com.sogokids.config.Configuration;
+import com.sogokids.common.config.Configuration;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 

@@ -1,6 +1,6 @@
 package com.sogokids.web.filter;
 
-import com.sogokids.util.RequestUtil;
+import com.sogokids.common.util.RequestUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

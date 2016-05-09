@@ -1,7 +1,7 @@
 package com.sogokids.service.user;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import com.sogokids.util.MiscUtil;
+import com.sogokids.common.util.MiscUtil;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Date;

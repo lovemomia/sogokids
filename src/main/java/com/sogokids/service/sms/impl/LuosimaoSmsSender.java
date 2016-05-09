@@ -2,7 +2,7 @@ package com.sogokids.service.sms.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.sogokids.config.Configuration;
+import com.sogokids.common.config.Configuration;
 import com.sogokids.service.sms.SmsSender;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.http.HttpEntity;

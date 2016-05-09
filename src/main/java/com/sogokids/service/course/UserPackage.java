@@ -12,6 +12,7 @@ public class UserPackage {
     private long orderId;
     private long priceId;
     private long subjectId;
+    private long subjectSkuId;
     private int courseCount;
     private int bookableCount;
     private Date addTime;
@@ -57,6 +58,14 @@ public class UserPackage {
 
     public void setSubjectId(long subjectId) {
         this.subjectId = subjectId;
+    }
+
+    public long getSubjectSkuId() {
+        return subjectSkuId;
+    }
+
+    public void setSubjectSkuId(long subjectSkuId) {
+        this.subjectSkuId = subjectSkuId;
     }
 
     public int getCourseCount() {

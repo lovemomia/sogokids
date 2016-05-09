@@ -8,8 +8,8 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.sogokids.ctrl" />
     <context:component-scan base-package="com.sogokids.mapi" />
+    <context:component-scan base-package="com.sogokids.web.ctrl" />
 
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="true">
@@ -17,5 +17,5 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
-    <bean id="responseConverter" class="com.sogokids.response.ResponseConverter" />
+    <bean id="responseConverter" class="com.sogokids.web.resp.ResponseConverter" />
 </beans>

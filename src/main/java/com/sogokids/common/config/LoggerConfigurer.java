@@ -1,4 +1,4 @@
-package com.sogokids.config;
+package com.sogokids.common.config;
 
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.LoggerContext;

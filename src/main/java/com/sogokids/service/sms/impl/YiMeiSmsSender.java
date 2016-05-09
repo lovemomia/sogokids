@@ -1,8 +1,8 @@
 package com.sogokids.service.sms.impl;
 
-import com.sogokids.config.Configuration;
+import com.sogokids.common.config.Configuration;
 import com.sogokids.service.sms.SmsSender;
-import com.sogokids.util.MiscUtil;
+import com.sogokids.common.util.MiscUtil;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;

@@ -10,6 +10,6 @@ public class PriceService extends AbstractService {
                 "FROM SG_Price A " +
                 "INNER JOIN SG_SubjectSku B ON A.RefId=B.SubjectId " +
                 "WHERE A.RefType=? AND B.SubjectId=? AND A.Status=1 AND B.Status=1";
-        return queryObjectList(sql, new Object[] { Price.Type.SUBJECT_PACKAGE, subjectId }, Price.class);
+        return queryObjectList(sql, new Object[] { Type.SUBJECT_PACKAGE, subjectId }, Price.class);
     }
 }

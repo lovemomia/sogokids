@@ -1,6 +1,6 @@
 package com.sogokids.mapi.feedback;
 
-import com.sogokids.exception.SogoErrorException;
+import com.sogokids.common.exception.SogoErrorException;
 import com.sogokids.mapi.AbstractApi;
 import com.sogokids.service.feedback.FeedbackService;
 import org.apache.commons.lang3.StringUtils;

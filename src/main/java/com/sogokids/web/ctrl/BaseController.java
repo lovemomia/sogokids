@@ -1,9 +1,9 @@
-package com.sogokids.ctrl;
+package com.sogokids.web.ctrl;
 
-import com.sogokids.exception.SogoErrorException;
-import com.sogokids.exception.SogoException;
-import com.sogokids.exception.SogoLoginException;
-import com.sogokids.response.Response;
+import com.sogokids.common.exception.SogoErrorException;
+import com.sogokids.common.exception.SogoException;
+import com.sogokids.common.exception.SogoLoginException;
+import com.sogokids.web.resp.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;

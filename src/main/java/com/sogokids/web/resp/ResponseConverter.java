@@ -1,4 +1,4 @@
-package com.sogokids.response;
+package com.sogokids.web.resp;
 
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;

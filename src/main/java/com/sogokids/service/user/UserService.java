@@ -1,9 +1,9 @@
 package com.sogokids.service.user;
 
 import com.google.common.collect.Sets;
-import com.sogokids.config.Configuration;
-import com.sogokids.exception.SogoErrorException;
-import com.sogokids.exception.SogoLoginException;
+import com.sogokids.common.config.Configuration;
+import com.sogokids.common.exception.SogoErrorException;
+import com.sogokids.common.exception.SogoLoginException;
 import com.sogokids.service.AbstractService;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.digest.DigestUtils;

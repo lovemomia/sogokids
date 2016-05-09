@@ -1,7 +1,7 @@
 package com.sogokids.service.course;
 
-import com.sogokids.exception.SogoErrorException;
-import com.sogokids.exception.SogoException;
+import com.sogokids.common.exception.SogoErrorException;
+import com.sogokids.common.exception.SogoException;
 import com.sogokids.service.AbstractService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,7 +56,7 @@ public class CourseService extends AbstractService {
     }
 
     public List<UserPackage> queryBookable(long userId, int start, int count) {
-        String sql = "SELECT A.Id, A.UserId, A.OrderId, A.PriceId, A.SubjectId, A.CourseCount, A.BookableCount, A.AddTime, B.Cover, B.Title " +
+        String sql = "SELECT A.Id, A.UserId, A.OrderId, A.PriceId, A.SubjectId, A.SubjectSkuId, A.CourseCount, A.BookableCount, A.AddTime, B.Cover, B.Title " +
                 "FROM SG_UserPackage A " +
                 "INNER JOIN SG_Subject B ON A.SubjectId=B.Id " +
                 "WHERE A.UserId=? AND A.BookableCount>0 AND A.Status=1 AND B.Status<>0 " +
@@ -66,7 +66,7 @@ public class CourseService extends AbstractService {
     }
 
     public UserPackage getUserPackage(long packageId) {
-        String sql = "SELECT A.Id, A.UserId, A.OrderId, A.PriceId, A.SubjectId, A.CourseCount, A.BookableCount, A.AddTime, B.Cover, B.Title " +
+        String sql = "SELECT A.Id, A.UserId, A.OrderId, A.PriceId, A.SubjectId, A.SubjectSkuId, A.CourseCount, A.BookableCount, A.AddTime, B.Cover, B.Title " +
                 "FROM SG_UserPackage A " +
                 "INNER JOIN SG_Subject B ON A.SubjectId=B.Id " +
                 "WHERE A.Id=? AND A.Status=1 AND B.Status<>0";

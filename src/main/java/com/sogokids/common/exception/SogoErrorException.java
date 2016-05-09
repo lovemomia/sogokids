@@ -1,4 +1,4 @@
-package com.sogokids.exception;
+package com.sogokids.common.exception;
 
 public class SogoErrorException extends SogoException {
     public SogoErrorException(String msg) {
